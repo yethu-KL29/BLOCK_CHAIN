@@ -1,20 +1,24 @@
-
+require('dotenv').config();
+const { API_KEY, P_KEY, POLY_URL } = process.env;
 require("@nomicfoundation/hardhat-toolbox");
+require("@nomiclabs/hardhat-etherscan");
 
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.17",
-  defaultNetwork: "matic",
+  solidity: "0.8.9",
+  etherscan:{
+    apiKey:API_KEY
+  },
   networks: {
     hardhat: {
     },
     // Sensitive contents are hidden
-    matic: {
+    mumbai: {
       //url from alchemy paste here 
-      url: "https://polygon-mumbai.g.alchemy.com/v2/qZOMD0O2fNBSlqWdz-DPJ0oytyUFb3a1",
+      url: POLY_URL,
       //private key from Metamask paste here 
-      accounts: [`0x4f7f8008085fb63c64d1d8cf718fc07ba0ec365839398062b4d355b6aac0d54b`],
+      accounts: [`0x${P_KEY}`],
     }
   },
 };

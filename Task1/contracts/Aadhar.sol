@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: UNLICENSED
+
 pragma solidity ^0.8.9;
 
 contract AadharReg {
@@ -9,7 +11,7 @@ contract AadharReg {
         string _dob;
     }
 
-    mapping(address => Aadhar) public _aadhar;
+    mapping(address => Aadhar) public person;
 
     //Create Aadhar Function
     function createAadhar(
@@ -18,7 +20,7 @@ contract AadharReg {
         string memory _address,
         string memory _dob
     ) public {
-        Aadhar storage aadhar = _aadhar[_user];
+        Aadhar storage aadhar = person[_user];
 
         aadhar._name = _name;
         aadhar._address = _address;
@@ -27,6 +29,6 @@ contract AadharReg {
 
     //Retrieve The aahar details using the Address
     function getAadhar(address _user) public view returns (Aadhar memory) {
-        return _aadhar[_user];
+        return person[_user];
     }
 }
