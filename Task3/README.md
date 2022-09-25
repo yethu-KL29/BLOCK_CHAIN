@@ -1,13 +1,25 @@
-# Sample Hardhat Project
+# Task3
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Try running some of the following tasks:
+> Q) Implementaion of Tokens
+- Create the Token
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+#### MainTask
+
+> Compaile and Deploy on VS code Environment
+### Completed
+- Compailed : _completed_
+- Deployed : _completed_
+- _Testing : Success
+
+## Refference Links
+
+- [HardHat Installation](https://hardhat.org/hardhat-runner/docs/getting-started) 
+- [HardHat Usage](https://hardhat.org/hardhat-runner/docs/getting-started) - Implementaion of HardHat 
+- [Alchemy](https://www.alchemy.com/) - For creating network url for deployment
+- [Polygon Testnet](https://blog.polysynth.com/how-to-connect-polygon-testnet-to-metamask-wallet-472bca410d64) - To connect Polygon Testnet to MetaMask wallet
+- [Matic Test Tokens](https://faucet.polygon.technology/) - This for getting test Tokens paste The wallet address
+- [Polysacan](https://mumbai.polygonscan.com/) : Polygon chain Testnet Explorer :- Check the transaction With your wallet address
+- [openzepline](https://docs.openzeppelin.com/contracts/4.x/wizard/): Token_Creation
+- [etherscan](https://hardhat.org/hardhat-runner/plugins/nomiclabs-hardhat-etherscan):EtherScan
